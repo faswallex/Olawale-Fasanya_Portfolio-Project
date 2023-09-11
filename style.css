@@ -1,0 +1,437 @@
+/* Create css variables for colors */
+:root {
+    --brand-black: #303030;
+    --brand-grey: #5e5e5e;
+    --brand-green: #14CFAE;
+}
+
+
+/* Reset all default styles */
+
+/* Reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Reset typography styles */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+/* Reset lists */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Reset links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Reset form elements */
+input,
+textarea,
+button,
+select {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 100%;
+    font-family: inherit;
+    background: transparent;
+}
+
+
+
+body{
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header .logo {
+    font-size: 30px;
+}
+
+header button svg {
+    width: 30px;
+    height: 30px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 80px 0 100px 0;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero figure {
+    width: 313px;
+    height: 313px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 10px 10px 22px -11px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 22px -11px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 22px -11px rgba(0, 0, 0, 0.75);
+}
+
+.hero figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero div h2,
+.hero div p {
+    text-align: center;
+    color: var(--brand-black);
+    font-size: 52px;
+    line-height: 60px;
+}
+
+.hero div .name {
+    font-weight: bold;
+}
+
+.hero .job_title {
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+}
+
+.hero .job_title_bg {
+    width: 380px;
+    height: 55px;
+    background-color: var(--brand-green);
+    position: absolute;
+    bottom: 436px;
+    z-index: -1;
+    right: calc(50% - 190px);
+}
+
+.what_i_do{
+    background-image: linear-gradient(180deg,
+            rgba(0,0,0, 0.75),
+            rgba(0,0,0, 0.75)),
+        url('/assets/images/christopher-gower-m_HRfLhgABo-unsplash.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px 15px 100px 15px;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.what_i_do .what_i_do_content{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+   
+    text-align: center;
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.what_i_do .what_i_do_flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.what_i_do .what_i_do_flex div{
+    flex-grow: 1;
+}
+
+.what_i_do  h2{
+  color: var(--brand-green);
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.what_i_do hr{
+    width: 100px;
+    border: 1px solid #fff;
+    margin:auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.what_i_do .what_i_do_flex div h3 {
+   font-weight: bold;
+   font-size: 20px;
+   margin-bottom: 10px;
+}
+
+.what_i_do .cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px  40px 40px;
+}
+
+.what_i_do .cta button{
+    background-color: var(--brand-green);
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 17px;
+    transition: all 0.3s ease-in-out;
+}
+
+.what_i_do .cta button:hover{
+   cursor: pointer;
+   background-color: #109d83;
+}
+
+.who_i_am {
+    position: relative;
+    padding: 100px 15px 150px 15px;
+    overflow: hidden;
+}
+
+.who_i_am .who_i_am_content {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.who_i_am .who_i_am_content div:first-child {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.who_i_am .who_i_am_content div:first-child >p{
+    font-size: 24px;
+    letter-spacing: 2px;
+    font-weight: medium;
+    background-color: var(--brand-green);
+    padding: 10px 5px;
+    transform: translateY(-15px);
+}
+
+.who_i_am .who_i_am_content div:first-child >div{
+   font-size: 18px;
+   color: var(--brand-black);
+}
+
+.who_i_am .who_i_am_content div:first-child > div p{
+   font-size: 18px;
+   color: var(--brand-grey);
+   margin-bottom: 20px;
+}
+
+.who_i_am h2{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.who_i_am .who_i_am_desktop_img {
+    display: none;
+}
+
+.my_work{
+    background-color: #2E2E2E;
+    padding: 100px 15px ;
+    color: #fff;
+    overflow: hidden;
+}
+
+.my_work .content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.my_work .content h3{
+    font-size: 60px;
+    font-weight: bold;
+    
+}
+.my_work .content p{
+   margin-bottom: 20px;
+   font-size: 24px;
+   font-weight: bold;
+   color: var(--brand-green); 
+}
+
+.my_work .gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+footer {
+    background-color: #141414;
+    padding: 70px 15px 70px 15px;
+    color: var(--brand-green);
+}
+
+footer > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+footer p{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer .social_media{
+    display: flex;
+    gap: 30px;
+    font-size: 18px;
+}
+
+/* CSS for Small (SM) Devices (Tablets) */
+@media (min-width: 576px)  {
+    /* Your CSS styles for small screens go here */
+.my_work .gallery {
+
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* CSS for Medium (MD) Devices (Desktops) */
+@media (min-width: 768px)  {
+    /* Your CSS styles for medium screens go here */
+        .hero {
+                flex-direction: row;
+        
+            }
+        
+            .hero .job_title_bg {
+            width: 700px;
+                bottom: 172px;
+                right: calc(50% - 340px);
+                height: 50px;
+            }
+        
+            .hero div h2,
+            .hero div p {
+                text-align: left;
+            }
+                        .what_i_do .what_i_do_flex {
+                            flex-direction: row;
+                        }
+
+  .who_i_am .who_i_am_content {
+    flex-direction: row;}
+.who_i_am .who_i_am_content {
+        text-align: left;
+}
+.who_i_am .who_i_am_content div:first-child>p {
+    background-color: transparent;
+    padding: 0px;
+    transform: translateY(-10px);
+}
+
+.who_i_am .who_i_am_mobile_img {
+    display: none;
+}
+.who_i_am .who_i_am_desktop_img {
+    display: block;
+}
+
+.who_i_am .bg{
+    background-color: var(--brand-green);
+    width: 1000px;
+    height: 50px;
+    position: absolute;
+    top: calc(50% - 120px);
+    z-index: -1;
+    
+}
+
+.my_work .gallery {
+   
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+footer .social_media {
+
+    gap: 50px;
+}
+
+}
+
+/* CSS for Large (LG) Devices (Desktops) */
+@media (min-width: 992px)  {
+    /* Your CSS styles for large screens go here */
+    .who_i_am .bg {
+  
+            top: calc(50% - 89px);
+            right: -70px;
+            width: 1100px;
+       
+    
+        }
+
+                  .my_work .gallery {
+        
+                      grid-template-columns: 1fr 1fr 1fr 1fr;
+                  }
+}
+
+/* CSS for Extra Large (XL) Devices (Large Desktops) */
+@media (min-width: 1200px) {
+    /* Your CSS styles for extra large screens go here */
+        .my_work .gallery {
+        
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            }
+        
+}
+
+
